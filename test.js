@@ -1,3 +1,4 @@
+
 class Test {
     
     constructor(users){
@@ -5,12 +6,9 @@ class Test {
     }
     
     showUsers(){
-        let usersNames = [];
-        for (let i = 0; i < this.users.length; i++){
-            usersNames.push(this.users[i].name);
-        }
-        return usersNames;
+        return this.users.map((user) => user.name);
     }
+    
 }
 
 
